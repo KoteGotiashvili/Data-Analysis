@@ -10,14 +10,18 @@ Identify the objective and goals of the analysis.
 - **Objective**: Understand the dataset and prepare it for predictive modeling.
 - **Goals**: Clean the data, perform EDA, and prepare the data for model training.
 
+
 ### 🔜 2. Data Collection
 Gather data from relevant sources.
-- **Source**: 🔜 
+- **Source**: https://www.kaggle.com/datasets/robikscube/rollercoaster-database
 - **Description**: Brief description of the dataset and its features.
 
 ### 🔜 3. Data Loading
 Load the data into a suitable format (e.g., CSV, Excel, database).
 - Ensure the data is loaded correctly for further analysis.
+
+There is data with little exploration: [Understand Basics](DataUnderstanding.py).
+
 
 ### 4. 🔜 Exploratory Data Analysis (EDA)
 Understand the structure and content of the data using summary statistics and visualizations.
