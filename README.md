@@ -28,6 +28,8 @@ Understand the structure and content of the data using summary statistics and vi
 - **Summary Statistics**: Analyze basic statistical properties of the data.
 - **Visualizations**: Use plots to explore data distribution and relationships.
 
+[Understand Basics](DataUnderstanding.py) this is enough EDA for this data
+
 ### 5. 🔜 Data Cleaning
 Handle missing values, remove duplicates, and correct data types.
 - **Missing Values**: Decide on strategies to handle missing data.
