@@ -3,32 +3,37 @@ from matplotlib.pylab import plt
 import numpy as np
 import pandas as pd
 
-def load_data(csv_source):
-    # display more columns
-    pd.set_option('display.max_columns', 20)
-    # read dataset
-    df = pd.read_csv(csv_source)
+class DataUnderstanding:
 
-    return df
 
-def understand_basics(df):
-    # understand the dataset
+    @staticmethod
 
-    # get shape row/column
-    print(df.shape)
+    def load_data(csv_source):
+        # display more columns
+        pd.set_option('display.max_columns', 20)
+        # read dataset
+        df = pd.read_csv(csv_source)
 
-    # get columns
-    print(df.columns)
+        return df
+    @staticmethod
+    def understand_basics(df):
+        # understand the dataset
 
-    # find datatypes
-    print(df.dtypes)
+        # get shape row/column
+        print(df.shape)
 
-    # describe data
-    print(df.describe())
+        # get columns
+        print(df.columns)
 
-    # get columns info
-    print(df.info())
+        # find datatypes
+        print(df.dtypes)
+
+        # describe data
+        print(df.describe())
+
+        # get columns info
+        print(df.info())
 
 # get basic info about data
-# understand_basics(load_data('./data/coaster_db.csv'))
+# DataUnderstanding.understand_basics(DataUnderstanding.load_data('./data/coaster_db.csv'))
 
