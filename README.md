@@ -30,24 +30,21 @@ Understand the structure and content of the data using summary statistics and vi
 
 [Understand Basics](DataUnderstanding.py) this is enough EDA for this data
 
-### 5. 🔜 Data Cleaning
+### 5. 🔜 Data Cleaning, Data Preprocessing
 Handle missing values, remove duplicates, and correct data types.
 - **Missing Values**: Decide on strategies to handle missing data.
 - **Duplicates**: Identify and remove duplicate entries.
 - **Data Types**: Ensure all data types are correctly assigned.
 
-### 6.🔜  Data Preprocessing
-Normalize or standardize data, encode categorical variables, and perform feature engineering.
-- **Normalization/Standardization**: Prepare numerical data for modeling.
-- **Categorical Encoding**: Convert categorical variables into numerical format.
-- **Feature Engineering**: Create new features to improve model performance.
+[Preprocess Data](DataPreparation.py) clean data, make it ready for visualization and predictions
 
-### 7. 🔜 Data Splitting
+
+### 6. 🔜 Data Splitting
 Split the data into training and testing sets.
 - **Training Set**: Used to train the model.
 - **Testing Set**: Used to evaluate the model's performance.
 
-### 8.🔜  Data Visualization
+### 7.🔜  Data Visualization
 Visualize data to identify patterns and insights using plots like histograms, scatter plots, and box plots.
 - **Histograms**: Analyze the distribution of numerical features.
 - **Scatter Plots**: Explore relationships between features.
