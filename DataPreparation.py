@@ -19,11 +19,10 @@ class DataPreparation:
         """
         df = DataUnderstanding.load_data('./data/coaster_db.csv')
         # columns that make sense to keep at this moment
-        columns_to_keep = ['year_introduced','coaster_name', 'Manufacturer', 'speed_mph', 'height_ft', 'Inversions_clean', 'Gforce_clean', 'opening_date_clean']
+        columns_to_keep = ['Location', 'year_introduced','coaster_name', 'Manufacturer', 'speed_mph', 'height_ft', 'Inversions_clean', 'Gforce_clean', 'opening_date_clean']
         # filter columns
         df = df.filter(items=columns_to_keep)
         # date set as object but it is datetime, so change it
-        df['opening_date_clean'] = pd.to_datetime(df['opening_date_clean'])
 
         # Rename columns
         df = df.rename(columns={'coaster_name': 'Coaster_Name',
@@ -32,6 +31,22 @@ class DataPreparation:
                                 'speed_mph': 'Speed_mph',
                                 'height_ft': 'Height_ft',
                                 'Inversions_clean': 'Inversions',
-                                'Gforce_clean': 'Gforce'})
+                                'Gforce_clean': 'Gforce'}) # modify original without copy
+        df['Opening_Date'] = pd.to_datetime(df['Opening_Date'])
+        # identify missing values
+      #  print(df.isna().sum())
 
+        # check if there is duplicate in coaster names
+
+       # print(df.query('Coaster_Name == "Crystal Beach Cyclone"'))
+        #The code identifies duplicates in df based on the columns
+        # 'Coaster_Name', 'Location', and 'Opening_Date' and removes if there is duplicates
+        df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])] .reset_index(drop=True).copy()
+        print(df.head())
+        print(df.shape)
+
+
+
+dp = DataPreparation()
+dp.clean_colums()
 
