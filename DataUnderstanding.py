@@ -4,10 +4,7 @@ import numpy as np
 import pandas as pd
 
 class DataUnderstanding:
-
-
     @staticmethod
-
     def load_data(csv_source):
         # display more columns
         pd.set_option('display.max_columns', 20)
@@ -15,6 +12,7 @@ class DataUnderstanding:
         df = pd.read_csv(csv_source)
 
         return df
+
     @staticmethod
     def understand_basics(df):
         # understand the dataset
