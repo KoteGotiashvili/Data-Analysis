@@ -44,6 +44,12 @@ Visualize data to identify patterns and insights using plots like histograms, sc
 
 Let's visualize data (:
 
+**Histogram Of Speed:** ![histogram](images/hist.png)
+
+**Bar Chart Of Year Introduced:** ![bar chart](images/bar.png)
+
+**Kernel Density Estimate(KDE) Of Speed:** ![kde](images/kde.png)
+
 ## 🔜  Next Steps
 The data is now clean and ready for model selection and prediction. In the next steps, we will:
 - Choose appropriate machine learning models.
