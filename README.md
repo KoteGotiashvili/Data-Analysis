@@ -39,7 +39,7 @@ Handle missing values, remove duplicates, and correct data types.
 [Preprocess Data](DataPreparation.py) clean data, make it ready for visualization and predictions
 
 
-### 6.  Data Visualization
+### 6.  Data Visualization/Feature Understanding
 Visualize data to identify patterns and insights using plots like histograms, scatter plots, and box plots.
 
 Let's visualize data (:
@@ -49,6 +49,14 @@ Let's visualize data (:
 **Bar Chart Of Year Introduced:** ![bar chart](images/bar.png)
 
 **Kernel Density Estimate(KDE) Of Speed:** ![kde](images/kde.png)
+
+
+### 7. Feature Relationships
+ Analyze relationships between features to uncover hidden patterns 
+ and correlations. Use techniques like scatter plots, correlation matrices, 
+ and pair plots to identify how features interact and influence each other, guiding more informed 
+ decision-making in model development.
+
 
 ## 🔜  Next Steps
 The data is now clean and ready for model selection and prediction. In the next steps, we will:
