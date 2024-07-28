@@ -47,8 +47,8 @@ class DataPreparation:
         #The code identifies duplicates in df based on the columns
         # 'Coaster_Name', 'Location', and 'Opening_Date' and removes if there is duplicates
         df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])] .reset_index(drop=True).copy()
-        print(df.head())
-        print(df.shape)
+        # print(df.head())
+        # print(df.shape)
 
         return df
 
