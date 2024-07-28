@@ -16,6 +16,11 @@ class DataPreparation:
         """
         Save only neccessary columns, remove others
 
+        clean dataset, handle nan values, keep interesting things.
+
+        This is not dynamic class, because I will work only on this dataset.
+        this is reason why i dont pass directory to load data
+
         """
         df = DataUnderstanding.load_data('./data/coaster_db.csv')
         # columns that make sense to keep at this moment
@@ -44,6 +49,8 @@ class DataPreparation:
         df = df.loc[~df.duplicated(subset=['Coaster_Name', 'Location', 'Opening_Date'])] .reset_index(drop=True).copy()
         print(df.head())
         print(df.shape)
+
+        return df
 
 
 
