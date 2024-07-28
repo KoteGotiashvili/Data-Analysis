@@ -39,16 +39,10 @@ Handle missing values, remove duplicates, and correct data types.
 [Preprocess Data](DataPreparation.py) clean data, make it ready for visualization and predictions
 
 
-### 6. 🔜 Data Splitting
-Split the data into training and testing sets.
-- **Training Set**: Used to train the model.
-- **Testing Set**: Used to evaluate the model's performance.
-
-### 7.🔜  Data Visualization
+### 6.🔜  Data Visualization
 Visualize data to identify patterns and insights using plots like histograms, scatter plots, and box plots.
-- **Histograms**: Analyze the distribution of numerical features.
-- **Scatter Plots**: Explore relationships between features.
-- **Box Plots**: Examine the spread and outliers in the data.
+
+Let's visualize data (:
 
 ## 🔜  Next Steps
 The data is now clean and ready for model selection and prediction. In the next steps, we will:
