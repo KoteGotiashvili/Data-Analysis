@@ -56,9 +56,11 @@ Let's visualize data (:
  and correlations. Use techniques like scatter plots, correlation matrices, 
  and pair plots to identify how features interact and influence each other, guiding more informed 
  decision-making in model development.
+ 
+[Feature Relationships](FeatureRelationships.py)
 
 
-## 🔜  Next Steps
+## Next Steps
 The data is now clean and ready for model selection and prediction. In the next steps, we will:
 - Choose appropriate machine learning models.
 - Train the models on the training data.
