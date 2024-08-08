@@ -69,5 +69,5 @@ The data is now clean and ready for model selection and prediction. In the next 
 - Make predictions on the testing data.
 - Deploy the model for production use.
 
-Stay tuned for further updates, Happy Coding!
+Happy Coding!
 
